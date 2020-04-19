@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Test Suite]">
+  <test thread-count="5" name="Regression Test(failed)">
     <classes>
       <class name="in.co.mercuryTravel.tests.MercuryTravelTestcases">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="invokeBrowser"/>
+          <include name="postCleanUp"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="cleanUp"/>
+          <include name="preSetup"/>
           <include name="verifyUserLoginWithCorrectCredentials"/>
         </methods>
       </class> <!-- in.co.mercuryTravel.tests.MercuryTravelTestcases -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Regression Test Suite] -->
