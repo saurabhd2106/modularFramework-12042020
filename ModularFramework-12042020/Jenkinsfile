@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        
+         stage('Maven Clean') {
+            steps {
+               dir("ModularFramework-12042020/") {
+                powershell 'mvn clean'
+               }
+            }
+        }
+        
+         stage('Maven Test') {
+            steps {
+               dir("ModularFramework-12042020/") {
+                powershell 'mvn test'
+               }
+            }
+        }
+    }
+}
