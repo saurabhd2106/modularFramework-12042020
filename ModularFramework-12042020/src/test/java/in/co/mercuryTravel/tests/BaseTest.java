@@ -113,7 +113,7 @@ public class BaseTest {
 		homepage = new HomePage(driver);
 
 		screenshotControl = new ScreenshotControl(driver);
-		homepage.closeInitialModal();
+		//homepage.closeInitialModal();
 
 	}
 

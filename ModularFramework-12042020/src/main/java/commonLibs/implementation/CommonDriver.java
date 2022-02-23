@@ -24,13 +24,13 @@ public class CommonDriver implements IDriver {
 		currentWorkingDriectory = System.getProperty("user.dir");
 		
 		if (browserType.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					currentWorkingDriectory + "/drivers/chromedriver.exe");
+		//	System.setProperty("webdriver.chrome.driver",
+		//			currentWorkingDriectory + "/drivers/chromedriver.exe");
 
 			driver = new ChromeDriver();
 		} else if (browserType.equalsIgnoreCase("edge")) {
-			System.setProperty("webdriver.edge.driver",
-					currentWorkingDriectory + "/drivers/MicrosoftWebDriver.exe");
+			//System.setProperty("webdriver.edge.driver",
+			//currentWorkingDriectory + "/drivers/MicrosoftWebDriver.exe");
 
 			driver = new EdgeDriver();
 		} else {

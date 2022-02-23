@@ -41,6 +41,9 @@ public class HomePage extends BasePage {
 
 	@FindBy(partialLinkText = "Welcome,")
 	private WebElement welcomeText;
+	
+	@FindBy(partialLinkText = "Log Out")
+	private WebElement logoutLink;
 
 	public HomePage(WebDriver driver) {
 
@@ -74,6 +77,14 @@ public class HomePage extends BasePage {
 	public String getWelcomeMessage() throws Exception {
 
 		return elementControl.getText(welcomeText);
+	}
+	
+	public void logOut() throws Exception{
+		
+		mouseControl.moveToElement(welcomeText);
+		
+		mouseControl.moveToElementAndClick(logoutLink);
+		
 	}
 
 }
